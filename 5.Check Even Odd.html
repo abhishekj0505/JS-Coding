@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+
+    let a = parseInt(prompt('ENter the number you want to check'))
+
+    let check = (x)=>{
+        if(x%2==0){
+            console.log(`${x} is an even number`)
+        }else{
+            console.log(`${x} is an odd number`)
+        }
+    }
+
+    check(a)
+
+    // OR
+
+    let b = parseInt(prompt('Enter the number you want to check'))
+
+    let res = b%2==0 ? 'even' : 'odd'
+
+    console.log(`${b} is an ${res} number`)
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

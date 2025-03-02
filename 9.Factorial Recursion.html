@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+
+    let a = parseInt(prompt('Enter the number whose factorial you want to find'))
+
+    const fact = (x)=>{
+      if (x==0){
+        return 1
+      }
+
+      return x * fact(x-1)
+    }
+
+    console.log(`Factorial of ${a} id ${fact(a)}`)
+
+  </script>
+  <body></body>
+</html>

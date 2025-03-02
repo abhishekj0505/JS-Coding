@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const numbers = [50, 10, 56, 67, 33];
+      let largestNumber = numbers[0];
+
+      const find = () => {
+        for (i = 0; i < numbers.length; i++) {
+          if (numbers[i] > largestNumber) {
+            largestNumber = numbers[i];
+          }
+        }
+        console.log(largestNumber);
+      };
+
+      find(numbers);
+    </script>
+  </head>
+  <body></body>
+</html>

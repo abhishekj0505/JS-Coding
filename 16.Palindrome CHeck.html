@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+     
+
+      let str = prompt("Enter a string");
+
+      let len = str.length;
+
+      let isPalindrome = true;
+
+      for (let i = 0; i < len / 2; i++) {
+        if (str[i] !== str[len - 1 - i]) {
+          isPalindrome = false;
+        }
+      }
+
+      if (isPalindrome) {
+        console.log(`${str} is a palindorme`);
+      } else {
+        console.log(`${str} isnt palindorme`);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

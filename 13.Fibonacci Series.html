@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+
+    let a = parseInt(prompt("Enter the number of elements you want to print"));
+
+    const fib = (a) => {
+      let ans = [0, 1];
+
+      for (let i = 2; i < a; i++) {
+        ans[i] = ans[i - 1] + ans[i - 2];
+      }
+
+      return ans;
+    };
+
+    console.log(fib(a));
+  </script>
+  <body></body>
+</html>

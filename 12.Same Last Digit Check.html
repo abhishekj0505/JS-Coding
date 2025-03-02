@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let a = parseInt(prompt("Enter the first number"));
+      let b = parseInt(prompt("Enter the second number"));
+      let c = parseInt(prompt("Enter the third number"));
+
+      check = (a, b, c) => {
+        if (a % 10 == b % 10 && a % 10 == c % 10) {
+          console.log("All 3 number have same last digit.");
+        } else {
+          console.log("All 3 number don't have same last digit.");
+        }
+      };
+      check(a, b, c);
+    </script>
+  </head>
+  <body></body>
+</html>

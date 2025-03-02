@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // let a = parseInt(prompt("Enter the first number"));
+      // let b = parseInt(prompt("Enter the second number"));
+      // let c = prompt("Enter the option among +, _, * and /");
+
+      // switch (c) {
+      //   case "+":
+      //     res = a + b;
+      //     break;
+      //   case "-":
+      //     res = a - b;
+      //     break;
+      //   case "*":
+      //     res = a * b;
+      //     break;
+      //   case "/":
+      //     res = a / b;
+      //     break;
+      //   default:
+      //     console.log("Invalid Operator");
+      // }
+
+      // console.log(`First number : ${a} ${c} Second Number : ${b} = ${res}`);
+
+      let a = parseInt(prompt("Enter the first number"));
+      let b = parseInt(prompt("Enter the second number"));
+
+      let op = prompt("Enter the operation among +, _, / or *");
+
+      let res
+
+      switch (op) {
+        case "+":
+          res = a + b;
+          break;
+        case "-":
+          res = a - b;
+          break;
+        case "*":
+          res = a * b;
+          break;
+        case "/":
+          res = a / b;
+          break;
+        default:
+          console.log('Invalid Operator')
+      }
+
+      console.log(`${a} ${op} ${b} = ${res}`)
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // let x = parseInt(
+      //   prompt("Enter the number whose factorial you want to find")
+      // );
+      // let z = 1;
+
+      // factorial = (y) => {
+      //   for (i = 1; i <= y; i++) {
+      //     z = z * i;
+      //   }
+      //   console.log(`Faatorial of ${y} is ${z}`);
+      // };
+      // factorial(x);
+      let a = parseInt(
+        prompt("Enter the number whose factorial you want to find")
+      );
+
+      let z = 1;
+
+      const factorial = (x) => {
+        for (let i = 1; i <= x; i++) {
+          z = z * i;
+        }
+        return z
+      };
+
+      console.log(factorial(a))
+    </script>
+  </head>
+  <body></body>
+</html>

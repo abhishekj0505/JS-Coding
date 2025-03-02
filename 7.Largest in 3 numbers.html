@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let x = parseInt(prompt('Enter the first number'))
+        let y = parseInt(prompt('Enter the second number'))
+        let z = parseInt(prompt('Enter the third number'))
+
+        check = (a,b,c)=>{
+            if(a>b && a>c){
+                return a;
+            }
+            else if(b>a && b>c){
+                return b;
+            }
+            if(c>b && c>a){
+                return c;
+            }
+        }
+
+        let ans = check(x,y,z)
+
+        console.log(`The greatest number among ${x}, ${y}, ${z} is ${ans}` )
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

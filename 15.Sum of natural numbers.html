@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let a = parseInt(prompt("Enter the number upto which you want to find the sum"));
+
+      add = (x) => {
+        if (x == 0) {
+          return 0;
+        } else {
+          return x + add(x - 1);
+        }
+      };
+      console.log(add(a));
+
+      // OR
+
+      let x = parseInt(
+        prompt("Enter the number upto which you want to find the sum")
+      );
+
+      const add = (x) => {
+        let sum = 0;
+        for (let i = 1; i <= x; i++) {
+          sum = sum + i;
+        }
+        console.log(`The sum of ${x} natural numbers is ${sum}`)
+      };
+
+      add(x);
+    </script>
+  </head>
+  <body></body>
+</html>

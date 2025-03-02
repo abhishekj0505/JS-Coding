@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // let str = '55554444333322211';
+
+      // let uniqueStr = "";
+
+      // for (let i = 0; i < str.length; i++) {
+      //   let char = str[i];
+
+      //   if (uniqueStr.indexOf(char) === -1) {
+      //     uniqueStr += char;
+      //   }
+      // }
+      // console.log(uniqueStr);
+
+      let str = prompt('Enter a string')
+
+      let uniqueStr = ''
+
+      for(let i=0; i<str.length; i++){
+
+          let char = str[i]
+
+          if(uniqueStr.indexOf(char)=== -1){
+            uniqueStr = uniqueStr + char
+          }
+      }
+
+      console.log(uniqueStr)
+
+    </script>
+  </head>
+  <body></body>
+</html>
