@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+    //   const str = prompt("Enter a string");
+
+    //   const strArray = str.split(" ");
+
+    //   let longestWord = "";
+
+    //   for (let word of strArray) {
+    //     if (word.length > longestWord.length) longestWord = word;
+    //   }
+
+    //   console.log(longestWord);
+
+
+    // OR 
+
+        const str = prompt('ENter a string')
+
+        const strArray = str.split(' ')
+
+        const longestFunction = ()=>{
+            return strArray.reduce((longest, current)=>{
+                return current.length > longest.length ? current : longest;
+            })
+        }
+
+        console.log(longestFunction())
+
+
+    </script>
+  </head>
+
+  <body></body>
+</html>
