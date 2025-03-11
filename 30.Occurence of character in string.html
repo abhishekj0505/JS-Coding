@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const str = prompt("Enter a string");
+      const char = prompt("Enter the character whose count you want to find");
+
+      const strArray = str.split("");
+      const desiredCharacter = [];
+
+      const characterCount = () => {
+        for (let i = 0; i < strArray.length; i++) {
+          if (strArray[i] === char) {
+            desiredCharacter.push(strArray[i]);
+          }
+        }
+        return desiredCharacter.length;
+      };
+
+      console.log(characterCount());
+    </script>
+  </head>
+  <body></body>
+</html>
